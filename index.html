@@ -111,10 +111,27 @@
           <img src="assets/img/my.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Duleesha Gamalathge</h3>
-          <p class="fst-italic">
-            Description about me
-          </p>
+          <h3>Hey there, <span id="typed-text"></span></h3>
+          <script>
+            const textToType = "I am Duleesha!";
+            let j = 0;
+    
+            function typeEffect1() {
+                const element1 = document.getElementById("typed-text");
+    
+                if (j < textToType.length) {
+                    element1.innerHTML += textToType.charAt(j);
+                    j++;
+                    setTimeout(typeEffect1, 100); // Adjust typing speed (in milliseconds)
+                } else {
+                    j = 0; // Reset index when end of text is reached
+                    element1.innerHTML = ""; // Clear the text
+                    setTimeout(typeEffect1, 1000); // Delay before starting again (in milliseconds)
+                }
+            }
+    
+            typeEffect1();
+          </script>
           <div class="row">
             <div class="col-lg-6">
               <ul>
