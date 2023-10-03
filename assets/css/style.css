@@ -1,10 +1,15 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root{
+  --font-base: #fff;
+  --back-base: rgba(0, 0, 0, 0.80);
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
-  color: #fff;
+  color: var(--font-base);
   position: relative;
   background: transparent;
 }
@@ -57,7 +62,8 @@ h6 {
   align-items: center;
   z-index: 997;
   overflow-y: auto;
-  background: rgba(0, 0, 0, 0.80);
+  background: var(--back-base);
+  /* background: rgba(90, 109, 118, 0.80); */
 
 }
 
@@ -76,7 +82,7 @@ h6 {
 
 #header h1 a,
 #header h1 a:hover {
-  color: #fff;
+  color: var(--font-base);
   line-height: 1;
   display: inline-block;
 }
@@ -88,7 +94,7 @@ h6 {
 }
 
 #header h2 span {
-  color: #fff;
+  color: var(--font-base);
   border-bottom: 2px solid #96B6C5;
   padding-bottom: 6px;
 }
@@ -109,7 +115,7 @@ h6 {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: var(--font-base);
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
@@ -130,9 +136,9 @@ h6 {
 }
 #header .btn-group .custom-btn:hover,
 #header .btn-group .custom-btn a:hover{
-  background-color: #fff;
-  border-color: #fff;
-  color: #fff;
+  background-color: var(--font-base);
+  border-color: var(--font-base);
+  color: var(--font-base);
   background-color: #96B6C5;
   font-weight: 600;
 }
@@ -201,9 +207,9 @@ h6 {
 }
 #header.header-top .btn-group .custom-btn:hover,
 #header.header-top .btn-group .custom-btn a:hover{
-  background-color: #fff;
-  border-color: #fff;
-  color: #fff;
+  background-color: var(--font-base);
+  border-color: var(--font-base);
+  color: var(--font-base);
   background-color: #96B6C5;
   font-weight: 600;
 }
@@ -296,14 +302,14 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fff;
+  color: var(--font-base);
 }
 
 /**
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: var(--font-base);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -434,7 +440,7 @@ section .container {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: var(--font-base);
 }
 
 /*--------------------------------------------------------------
@@ -445,7 +451,9 @@ section .container {
   font-weight: 700;
   font-size: 26px;
   color: #96B6C5;
-  border-right: 2px solid #fff;
+}
+.about-me .content #typed-text{
+  border-right: 2px solid var(--font-base);
 }
 
 .about-me .content ul {
@@ -464,10 +472,19 @@ section .container {
 }
 
 .about-me .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
+  font-size: 10px;
+  margin-right: 10px;
   color: #96B6C5;
   line-height: 0;
+}
+
+.about-me .content #mail{
+  color: #fff;
+  margin-left: -10px;
+  padding: 0;
+}
+.about-me .content #mail:hover{
+  color: #96B6C5;
 }
 
 .about-me .content p:last-child {
@@ -491,7 +508,7 @@ section .container {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: var(--font-base);
 }
 
 .skills .progress .skill .val {
@@ -533,7 +550,7 @@ section .container {
   padding: 0;
   line-height: 1;
   font-size: 16px;
-  color: #fff;
+  color: var(--font-base);
 }
 
 .interests .icon-box:hover {
@@ -567,7 +584,7 @@ section .container {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
-  color: #fff;
+  color: var(--font-base);
 }
 
 .testimonials .testimonial-item h4 {
@@ -631,7 +648,7 @@ section .container {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--font-base);
 }
 
 .resume .resume-item {
@@ -658,7 +675,7 @@ section .container {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #fff;
+  color: var(--font-base);
 }
 .text-trans{
   text-transform: lowercase;
@@ -712,7 +729,7 @@ section .container {
 }
 
 .gallery .icon-box .icon i {
-  color: #fff;
+  color: var(--font-base);
   font-size: 28px;
 }
 
@@ -736,7 +753,7 @@ section .container {
 }
 
 .gallery .icon-box h4 a {
-  color: #fff;
+  color: var(--font-base);
 }
 
 .gallery .icon-box p {
@@ -751,7 +768,7 @@ section .container {
 }
 
 .gallery .icon-box:hover .icon {
-  background: #fff;
+  background: var(--font-base);
 }
 
 .gallery .icon-box:hover .icon i {
@@ -764,7 +781,7 @@ section .container {
 
 .gallery .icon-box:hover h4 a,
 .gallery .icon-box:hover p {
-  color: #fff;
+  color: var(--font-base);
 }
 
 /*--------------------------------------------------------------
@@ -792,7 +809,7 @@ section .container {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--font-base);
   background: rgba(255, 255, 255, 0.1);
   margin: 0 3px 10px 3px;
   transition: all 0.3s ease-in-out;
@@ -853,8 +870,8 @@ section .container {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid #fff;
-  border-left: 3px solid #fff;
+  border-top: 3px solid var(--font-base);
+  border-left: 3px solid var(--font-base);
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -867,20 +884,20 @@ section .container {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid #fff;
-  border-right: 3px solid #fff;
+  border-bottom: 3px solid var(--font-base);
+  border-right: 3px solid var(--font-base);
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #fff;
+  color: var(--font-base);
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #ffffff;
+  color: var(--font-base);
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -893,7 +910,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
+  color: var(--font-base);
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -931,7 +948,7 @@ section .container {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--back-base);
   position: fixed;
   left: 0;
   right: 0;
@@ -1040,14 +1057,14 @@ section .container {
 
 .contact .info-box p {
   padding: 0;
-  color: #fff;
+  color: var(--font-base);
   line-height: 24px;
   font-size: 14px;
   margin: 0 0 0 68px;
 }
 .contact .info-box .btn--contact{
-  color: #fff;
-  padding-left: 25px;
+  color: var(--font-base);
+  padding: 0px 0px 0px 25px;
   text-decoration: underline;
 }
 .contact .info-box .btn--contact a:hover{
@@ -1063,7 +1080,7 @@ section .container {
 .contact .info-box .social-links a {
   font-size: 18px;
   display: inline-block;
-  color: #fff;
+  color: var(--font-base);
   line-height: 1;
   margin-right: 12px;
   transition: 0.3s;
@@ -1076,7 +1093,7 @@ section .container {
 } */
 .contact #profiles img{
   width: 20px;
-  background-color: #fff;
+  background-color: var(--font-base);
 }
 /* .contact #profiles img a:hover{
   width: 20px;
@@ -1141,7 +1158,7 @@ section .container {
   background: rgba(255, 255, 255, 0.08);
   border: 0;
   transition: 0.3s;
-  color: #fff;
+  color: var(--font-base);
 }
 
 .contact .php-email-form input:focus,
@@ -1173,7 +1190,7 @@ section .container {
   background: #96B6C5;
   border: 0;
   padding: 10px 30px;
-  color: #fff;
+  color: var(--font-base);
   transition: 0.4s;
   border-radius: 4px;
 }
@@ -1209,7 +1226,7 @@ section .container {
   padding: 15px 55px 5px 15px;
   text-align: right;
   font-size: 13px;
-  color: #fff;
+  color: var(--font-base);
   z-index: 999999;
 }
 
@@ -1217,7 +1234,7 @@ section .container {
   .credits {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--back-base)
   }
 }
 
@@ -1227,5 +1244,5 @@ section .container {
 }
 
 .credits a:hover {
-  color: #fff;
+  color: var(--font-base);
 }
